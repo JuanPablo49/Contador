@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var a=11;
+	</script>
+	<title>Ejercicio 1</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+	
+	<body onload="saludo()">
+
+
+	<div id="cuadro" class="cuadro">
+		<h1 style="">HOLA<h1>
+	</div>
+
+
+	<script>
+
+	function contador()
+	{
+		 console.log(a)
+		a=a-1;
+			cuadro=document.getElementById('cuadro');
+			cuadro.innerHTML = a;
+			if(a==0){
+				clearInterval(c);
+
+				console.log("Finalizado");
+				document.write("FINALIZADO");
+			
+		}
+		
+	}
+
+	function contador2()
+	{
+		c=setInterval(contador,1000)
+	}
+
+
+	function saludo(){
+		
+	  setTimeout(contador2,4000);
+
+	}
+
+
+
+	</script>
+
+
+
+</body>
+</html>
